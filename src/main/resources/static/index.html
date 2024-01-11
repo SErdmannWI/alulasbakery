@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Station Control Panel</title>
+        <script src="js/statusScreen.js"></script>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+            }
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="testPage.html">Go To Test Page</a>
+        <h1>Station Control Panel</h1>
+
+        <button onclick="getAllStations()">Get All Stations</button>
+        <button onclick="getStation(prompt('Enter Station ID'))">Get Station By ID</button>
+        <button onclick="startAllStations()">Start All Stations</button>
+        <button onclick="resumeAllStations()">Resume All Stations</button>
+        <button onclick="pauseAllStations()">Pause All Stations</button>
+        <button onclick="stopAllStations()">Stop All Stations</button>
+
+        <button onclick="startIndividualStation(prompt('Enter Station ID to Start'))">Start Individual Station</button>
+        <button onclick="resumeIndividualStation(prompt('Enter Station ID to Resume'))">Resume Individual Station</button>
+        <button onclick="pauseIndividualStation(prompt('Enter Station ID to Pause'))">Pause Individual Station</button>
+        <button onclick="stopIndividualStation(prompt('Enter Station ID to Stop'))">Stop Individual Station</button>
+
+        <div id="add-product-to-queue">
+            <ul>
+                <ul><button id="add-bread-to-queue" value="BREAD" onclick="addProductToQueue(this.value)">Bread</button></ul>
+                <ul><button id="add-muffin-to-queue" value="MUFFIN" onclick="addProductToQueue(this.value)">Muffin</button></ul>
+                <ul><button id="add-croissant-to-queue" value="CROISSANT" onclick="addProductToQueue(this.value)">Croissant</button></ul>
+            </ul>
+        </div>
+
+        <div class="grid-container" id="stationGrid">
+            <!-- Grid items will be added here -->
+        </div>
+        <div class="product-queue-container" id="product-queue">
+            <ul id="product-queue-list">
+                <h3>Product Queue is currently Empty</h3>
+                <!-- Product Queue will be added here -->
+            </ul>
+        </div>
+    </body>
+</html>

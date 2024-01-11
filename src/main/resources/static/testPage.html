@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Records</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/testPage.js"></script>
+  </head>
+
+  <body>
+  <a href="index.html">Go To Home Page</a>
+    <h1>Alula's Bakery Test Records</h1>
+
+    <h2>Add New Test</h2>
+    <input type="text" id="newTestId" placeholder="Test ID">
+    <input type="text" id="newTestName" placeholder="Test Name">
+    <button onclick="addNewTest()">Add Test</button>
+
+    <h2>Get All Tests</h2>
+    <button onclick="getAllTests()">Retrieve All Tests</button>
+    <ul id="testsList"></ul>
+
+    <h2>Get Test by ID</h2>
+    <input type="text" id="searchTestId" placeholder="Test ID">
+    <button onclick="getTestById()">Get Test</button>
+    <p id="singleTestResult"></p>
+
+  </body>
+</html>
