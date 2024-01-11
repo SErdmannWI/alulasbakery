@@ -4,20 +4,7 @@ body {
     padding: 20px;
     margin: 0;
 }
-h1 {
-    color: #333;
-    text-align: center;
-}
-h2 {
-    color: #555;
-}
-input[type="text"] {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
 button {
     padding: 10px 15px;
     margin: 5px;
@@ -31,10 +18,36 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
+
+h1 {
+    color: #333;
+    text-align: center;
 }
+h2 {
+    color: #555;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 li {
     padding: 8px;
     background-color: #eee;
@@ -44,6 +57,12 @@ li {
 p {
     color: #666;
 }
-#singleTestResult {
-    font-weight: bold;
+
+.station-worker {
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }

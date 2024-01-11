@@ -131,11 +131,16 @@ function updateStationGrid() {
                 currentProduct = station.currentProduct.productName;
             }
             gridItem.innerHTML = `
-                    <h3>${station.stationName}</h3>
-                    <p>ID: ${station.stationId}</p>
+                    <h3 class="station-worker">Worker Name</h3>
+                    <h3>ID: ${station.stationId}</h3>
                     <p>Status: ${station.stationStatus}</p>
                     <p>Current Product: ${currentProduct}</p>
                 `;
+
+            let stationWorkerName = document.createElement("h3");
+            stationWorkerName.className = "station-worker";
+            stationWorkerName.textContent = `Test`;
+            gridItem.appendChild(stationWorkerName);
             gridContainer.appendChild(gridItem);
         });
     })

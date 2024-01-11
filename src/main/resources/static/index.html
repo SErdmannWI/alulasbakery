@@ -4,21 +4,7 @@
         <meta charset="UTF-8">
         <title>Station Control Panel</title>
         <script src="js/statusScreen.js"></script>
-        <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                grid-column-gap: 5px;
-                grid-row-gap: 5px;
-            }
-            .grid-item {
-                background-color: rgba(255, 255, 255, 0.8);
-                border: 1px solid rgba(0, 0, 0, 0.8);
-                padding: 20px;
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <a href="testPage.html">Go To Test Page</a>
@@ -45,7 +31,7 @@
         </div>
 
         <div class="grid-container" id="stationGrid">
-            <!-- Grid items will be added here -->
+            <!-- Stations will be added here -->
         </div>
         <div class="product-queue-container" id="product-queue">
             <ul id="product-queue-list">
