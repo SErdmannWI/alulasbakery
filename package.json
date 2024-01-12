@@ -1,0 +1,19 @@
+{
+  "name": "alulasbakery",
+  "version": "1.0.0",
+  "description": "Production tracking software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SErdmannWI/alulasbakery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SErdmannWI/alulasbakery/issues"
+  },
+  "homepage": "https://github.com/SErdmannWI/alulasbakery#readme"
+}
